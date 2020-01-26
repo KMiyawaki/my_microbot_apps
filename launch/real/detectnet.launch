@@ -2,11 +2,11 @@
   <arg name="use_camera" default="false" />
   <arg name="use_view" default="true"/>
   <arg name="model_name" default="ssd-mobilenet-v2"/>
-  <arg name="labels" default="/usr/local/bin/networks/SSD-Mobilenet-v2/ssd_coco_labels.txt"/>
+  <arg name="object_labels" default="/usr/local/bin/networks/SSD-Mobilenet-v2/ssd_coco_labels.txt"/>
   <include file="$(find oit_navigation_microbot_01)/launch/real/detectnet.launch">
     <arg name="use_camera" value="$(arg use_camera)"/>
     <arg name="use_view" value="$(arg use_view)"/>
     <arg name="model_name" value="$(arg model_name)"/>
-    <arg name="labels" value="$(arg labels)"/>
+    <arg name="object_labels" value="$(arg object_labels)"/>
   </include>
 </launch>
