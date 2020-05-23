@@ -15,7 +15,7 @@ define floorplan model
   ranger_return 1
 )
 
-define block model
+define rect_block model
 (
   size [0.5 0.5 0.5]
   gui_nose 0
